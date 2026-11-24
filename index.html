@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jeff Curless' packages</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 48rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+  pre { background: #f4f4f4; padding: 1rem; overflow-x: auto; border-radius: 6px; }
+  @media (prefers-color-scheme: dark) { body { background: #111; color: #ddd; } pre { background: #222; } a { color: #8ab4f8; } }
+</style>
+</head>
+<body>
+<h1>Jeff Curless' packages</h1>
+<p>An APT repository for Jeff Curless' projects, for Debian, Ubuntu and Raspberry Pi OS.</p>
+<h2>Add the repository (all users)</h2>
+<p>Anyone can install these packages. Run the commands below <strong>once on each computer</strong> to add the repository; you don't need to repeat them.</p>
+<pre>sudo curl -fsSL https://jeffcurless.github.io/packages/public.gpg \
+  -o /usr/share/keyrings/jeffcurless-packages.gpg
+echo "deb [signed-by=/usr/share/keyrings/jeffcurless-packages.gpg] https://jeffcurless.github.io/packages stable main" \
+  | sudo tee /etc/apt/sources.list.d/jeffcurless-packages.list
+sudo apt update</pre>
+<p>Then install with <code>sudo apt install &lt;package&gt;</code>. Updates arrive with <code>sudo apt update &amp;&amp; sudo apt upgrade</code>.</p>
+<p>Source: <a href="https://github.com/JeffCurless/packages">github.com/JeffCurless/packages</a></p>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Archive: stable
+Component: main
+Origin: JeffCurless
+Label: JeffCurless packages
+Architecture: amd64
+Description: Packages built by JeffCurless

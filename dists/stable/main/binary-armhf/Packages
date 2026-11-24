@@ -1,0 +1,43 @@
+Package: pistor
+Version: 1.1.3
+Architecture: all
+Maintainer: Jeff Curless <jeff@thecurlesses.com>
+Installed-Size: 58
+Depends: python3 (>= 3.10), python3-gpiozero, python3-lgpio
+Homepage: https://github.com/JeffCurless/piStor
+Priority: optional
+Section: misc
+Filename: pool/main/p/pistor/pistor_1.1.3_all.deb
+Size: 13040
+SHA256: 0370b6813b77b1d916cc49f8228f0a2fc1f93f53dcabd940504bb627c3aca256
+SHA1: 5a8a08a74f5e269c8df3d625cd857971b3c125c1
+MD5sum: fb3cbbe172f5f5be1dd10ae1214e790e
+Description: PWM fan control daemon for the piStor Raspberry Pi 5 NAS
+ piStor is a NAS-style build around a Raspberry Pi 5 and a Radxa Penta Hat.
+ This package provides the pistord systemd service, which reads the CPU
+ temperature and drives a PWM fan on GPIO 13, either automatically or from
+ a temperature/speed table in /etc/pistor.conf.
+
+Package: sysmon
+Version: 1.0.1
+Architecture: all
+Maintainer: Jeff Curless <jeff@thecurlesses.com>
+Installed-Size: 227
+Depends: python3 (>= 3.10), python3-venv, python3-pyqt6, python3-pyqt6.qtcharts, python3-gpiozero, python3-rpi-lgpio | python3-rpi.gpio, smartmontools, sudo
+Homepage: https://github.com/JeffCurless/sysmon
+Priority: optional
+Section: utils
+Filename: pool/main/s/sysmon/sysmon_1.0.1_all.deb
+Size: 71968
+SHA256: 3c47e7d7f90bfd7a49b46a0df5ee159ea4d2eed605e75f264b87d1df9eb0b561
+SHA1: 6e9e010cdf7420d0578a8932e4c48bf8ace39cd9
+MD5sum: 9d2911cb491cb7f15f1cae2925d52b3c
+Description: graphical system monitor for Raspberry Pi
+ sysmon is a PyQt6 desktop application that shows live rolling charts of
+ CPU utilization, disk I/O, network I/O, CPU and drive temperatures, and
+ fan speed, updating every second with 60 seconds of history.
+ .
+ The application runs from its own Python virtual environment in
+ /usr/lib/sysmon/venv, which is created when the package is installed and
+ uses the Debian-packaged PyQt6 and GPIO libraries.
+

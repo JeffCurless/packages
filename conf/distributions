@@ -1,0 +1,8 @@
+Origin: JeffCurless
+Label: JeffCurless packages
+Codename: stable
+Suite: stable
+Components: main
+Architectures: amd64 arm64 armhf
+Description: Packages built by JeffCurless
+SignWith: BEAB286B05F216A2
